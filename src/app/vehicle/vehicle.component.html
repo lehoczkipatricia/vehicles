@@ -1,0 +1,31 @@
+<form [formGroup]="newCarForm">
+    <div class="form-group">
+    <label>Rendszám</label>
+    <input type="text" class="form-control" formControlName='plate'>
+    </div>
+    <div class="form-group">
+    <label>Márka</label>
+    <input type="text" class="form-control" formControlName='brand'>
+    </div>
+    <div class="form-group">
+    <label>Gyártási év</label>
+    <input type="text" class="form-control" formControlName='year'>
+    </div>
+    <div class="form-group">
+    <label>Ár</label>
+    <input type="text" class="form-control" formControlName='price'>
+    </div>
+    <div class="form-group">
+    <label>Eladva</label>
+    <input type="text" class="form-control" formControlName='sold'>
+    </div>
+    <br>
+    <div class="form-group">
+    <button (click)="addNewCar()" class="btn btn-success">Felvesz</button>
+</div>
+</form>
+<br>
+<button type="button" class="btn btn-info" routerLink="/list">Járművek listája</button>
+<br>
+<br>
+<button type="button" class="btn btn-info" routerLink="/login">Bejelentkezés</button>

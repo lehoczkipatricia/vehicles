@@ -1,0 +1,27 @@
+
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Nr</th>
+      <th scope="col">Rendszám</th>
+      <th scope="col">Márka</th>
+      <th scope="col">Évszám</th>
+      <th scope="col">Ár</th>
+      <th scope="col">Eladva</th>
+    </tr>
+   </thead> 
+   <tbody>
+    <tr *ngFor="let vehicle of vehicles">
+      <td>{{vehicle.id}}</td>
+      <td>{{vehicle.plate}}</td>
+      <td>{{vehicle.brand}}</td>
+      <td>{{vehicle.year}}</td>
+      <td>{{vehicle.price}}</td>
+      <td>{{vehicle.sold}}</td>
+
+    </tr>
+  </tbody>
+  </table>
+
+  <button type="button" class="btn btn-primary" routerLink="/login">Bejelentkezés</button>
+  <button type="button" class="btn btn-primary mx-3" routerLink="/vehicle">Jármű hozzáadása</button>

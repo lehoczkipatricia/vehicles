@@ -1,0 +1,19 @@
+
+Járművek hozzáadásához jelentkezz be:
+
+<form [formGroup]="loginForm">
+    <div class="form-group py-3">
+    <label class="form-label">Felhasználónév</label>
+    <input class="form-control" formControlName="name">
+    </div>
+    <div class="form-group pb-3">
+ 
+    <label class="form-label">Jelszó</label>
+    <input class="form-control" type="password" formControlName="password">
+    </div>
+    <div class="form-group">
+    <button type="button" class="btn btn-primary mb-3" (click)="onLogin()">Belépés</button>
+    </div>
+</form>
+
+<button type="button" class="btn btn-info" routerLink="/list"> Járművek listájának megtekintése</button>
